@@ -43,7 +43,7 @@ def show_form():
     return render_template('survey_template.html')
 
 
-@app.route("/save", methods=['POST'])
+@app.route("/save/", methods=['POST'])
 def save():
     email = request.form["email"]
     name = request.form["name"]
