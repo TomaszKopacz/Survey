@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, redirect
 from flask_sqlalchemy import SQLAlchemy
-from flask_heroku import Heroku
 from datetime import datetime
 
 app = Flask(__name__)
@@ -8,6 +7,7 @@ app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = 'True'
 
 db = SQLAlchemy(app)
+
 
 class Answer(db.Model):
     __table_name__ = 'answers'
