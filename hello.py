@@ -3,7 +3,9 @@ from flask_sqlalchemy import SQLAlchemy
 from datetime import datetime
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///:memory:'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'postgres://asiopgjackioyq' \
+                                        ':77c694ab09e3fcf8c89a8ca55056c19ebc4be7d6ab4e8b27854670c123948bf1@ec2-54-225' \
+                                        '-242-183.compute-1.amazonaws.com:5432/d6i8f80sqi62dd'
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = 'True'
 
 db = SQLAlchemy(app)
@@ -14,9 +16,9 @@ class Answer(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     created_at = db.Column(db.DateTime, default=datetime.now)
-    email = db.Column(db.String)
-    name = db.Column(db.String)
-    faculty = db.Column(db.String)
+    email = db.Column(db.String(20))
+    name = db.Column(db.String(20))
+    faculty = db.Column(db.String(20))
     is_drunk = db.Column(db.Integer)
     how_often_drunk = db.Column(db.Integer)
     planned_drunk = db.Column(db.Integer)
@@ -28,9 +30,6 @@ class Answer(db.Model):
         self.is_drunk = is_drunk
         self.how_often_drunk = how_often_drunk
         self.planned_drunk = planned_drunk
-
-
-db.create_all()
 
 
 @app.route("/")
