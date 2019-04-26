@@ -1,1 +1,0 @@
-web: python hello.py runserver vast-shore-27561.herokuapp.com
