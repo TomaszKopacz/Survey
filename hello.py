@@ -56,19 +56,14 @@ def save():
     db.session.add(answer)
     db.session.commit()
 
-    return redirect("/")
+    return redirect("/results/")
 
 
 @app.route("/results/")
 def show_results():
     answers = db.session.query(Answer).all()
 
-    print("HELLO")
-
-    for answer in answers:
-        print(answer.name)
-
-    return "RESULTS"
+    return render_template("results_template.html", data=answers)
 
 
 if __name__ == "__main__":
