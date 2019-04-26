@@ -3,61 +3,222 @@
 {% block content %}
 
 <div class="container" style="padding:20px">
-    <h1>Ankieta</h1>
+    <h1>Zaznacz te odpowiedzi, które najbardziej do Ciebie pasują</h1>
 
     <form action="/save" method="post">
-        <div class="form-group answer">
-            <label for="email">E-mail:</label>
-            <input type="email" class="form-control" id="email" placeholder="Enter e-mail" name="email" required>
-        </div>
-        <div class="form-group answer">
-            <label for="name">Imię:</label>
-            <input type="text" class="form-control" id="name" placeholder="Enter your name" name="name">
-        </div>
-        <div class="form-group answer">
-            <label for="faculty">Wydział:</label>
-            <input type="text" class="form-control" id="faculty" placeholder="Enter your faculty" name="faculty">
-        </div>
+
         <div class="answer">
-            <label>Czy jesteś w tej chwili pod wpływem alkoholu?</label>
+            <label>1) W jakiej porze roku najchętniej wyjeżdżasz na wakacje/urlop? </label>
             <div class="radio">
-                <label><input type="radio" name="is_drunk" value="1" checked> Nie</label>
+                <label><input type="radio" name="season" value="Wiosna" checked> Wiosna</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="is_drunk" value="2"> Tak</label>
+                <label><input type="radio" name="season" value="Lato"> Lato</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="season" value="Jesień"> Jesień</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="season" value="Zima"> Zima</label>
             </div>
         </div>
+
         <div class="answer">
-            <label>Jak intensywnie spożywałeś/aś alkohol w ostatnim miesiącu?</label>
+            <label>2) Jakie miejsca najczęściej odwiedzasz?</label>
             <div class="radio">
-                <label><input type="radio" name="how_often_drunk" value="1" checked> Nie tykam alkoholu</label>
+                <label><input type="radio" name="place" value="Morze" checked> Morze</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="how_often_drunk" value="2"> Raz lub dwa wypiłem/am kilka piwek</label>
+                <label><input type="radio" name="place" value="Góry"> Góry</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="how_often_drunk" value="3"> Raz lub dwa, ale do oporu </label>
+                <label><input type="radio" name="place" value="Jeziora"> Jeziora</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="how_often_drunk" value="4"> Tankuję w każdy weekend</label>
+                <label><input type="radio" name="place" value="Państwa"> Państwa</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="how_often_drunk" value="5"> Weekend jest za krótki, więc robię poprawki
-                    w ciągu tygodnia</label>
+                <label><input type="radio" name="place" value="Wioski"> Wioski</label>
             </div>
         </div>
+
         <div class="answer">
-            <label>Planujesz alkoholizację w najbliższym czasie?</label>
+            <label>3) Czy masz ulubione miejsce, gdzie chętnie wyjeżdżasz na wakacje? Jeśli tak, to jakie?</label>
             <div class="radio">
-                <label><input type="radio" name="planned_drunk" value="1" checked> Nie</label>
+                <label><input type="radio" name="favourite" value="Tak"> Tak</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="planned_drunk" value="2"> Tak, w tym tygodniu</label>
+                <label><input type="radio" name="favourite" value="Nie" checked> Nie</label>
+            </div>
+            <label for="favourite">Jakie?</label>
+            <input type="text" class="form-control" id="favourite" placeholder="Twoje ujubione miejsce"
+                   name="favourite_text">
+        </div>
+
+        <div class="answer">
+            <label>4) Gdzie zatrzymujesz się podczas wakacji?</label>
+            <div class="radio">
+                <label><input type="radio" name="accommodation" value="W hotelu" checked> W hotelu</label>
             </div>
             <div class="radio">
-                <label><input type="radio" name="planned_drunk" value="3"> Tak, w tym miesiącu</label>
+                <label><input type="radio" name="accommodation" value="W hostelu"> W hostelu</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="accommodation" value="W motelu"> W motelu</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="accommodation" value="Pole campingowe"> Pole campingowe</label>
             </div>
         </div>
+
+        <div class="answer">
+            <label>5) Wolisz podróżować samolotem czy autobusem?</label>
+            <div class="radio">
+                <label><input type="radio" name="mean" value="Samolotem" checked> Samolotem</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="mean" value="Autobusem"> Autobusem</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="mean" value="Pociągiem"> Pociągiem</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="mean" value="Samochodem"> Samochodem</label>
+            </div>
+        </div>
+
+        <div class="answer">
+            <label>6) Czy sam organizujesz wycieczki czy korzystasz z usług biur podróży? </label>
+            <div class="radio">
+                <label><input type="radio" name="planning" value="Organizuję sam" checked> Organizuję sam</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="planning" value="Korzystam z biur podróży"> Korzystam z biur
+                    podróży</label>
+            </div>
+        </div>
+
+        <div class="answer">
+            <label>7) W jakim gronie wyjeżdżasz na wakacje?</label>
+            <div class="radio">
+                <label><input type="radio" name="partners" value="Samotnie" checked> Samotnie</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="partners" value="Rodzina"> Rodzina</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="partners" value="Partner/Partnerka"> Partner/Partnerka</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="partners" value="Inne"> Inne osoby</label>
+            </div>
+            <label for="partners">Jakie?</label>
+            <input type="text" class="form-control" id="partners" placeholder="Z kim podróżujesz?" name="partners_text">
+        </div>
+
+        <div class="answer">
+            <label>8) Lubisz wypoczywać aktywnie czy raczej spędzasz całe wakacje na plaży?</label>
+            <div class="radio">
+                <label><input type="radio" name="is_active" value="Spędzam wakacje aktywnie" checked> Spędzam wakacje
+                    aktywnie (przejdź do
+                    punktu 9)</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="is_active" value="Leżę plackiem na plaży"> Leżę plackiem na plaży
+                    (przejdź do punktu 10)</label>
+            </div>
+        </div>
+
+        <div class="answer">
+            <label>9) Jakie aktywności fizyczne uprawiasz podczas wakacji?</label>
+            <div class="radio">
+                <label><input type="radio" name="activity" value="Wycieczki rowerowe" checked> Wycieczki
+                    rowerowe</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="activity" value="Wspinaczka górska"> Wspinaczka górska</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="activity" value="Spływy kajakowe"> Spływy kajakowe</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="activity" value="Sporty wodne"> Sporty wodne</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="activity" value="Sporty zimowe"> Sporty zimowe</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="activity" value="Aktywne zwiedzanie"> Aktywne zwiedzanie</label>
+            </div>
+        </div>
+
+        <div class="answer">
+            <label>10) Kiedy byłeś ostatni raz na wakacjach?</label>
+            <div class="radio">
+                <label><input type="radio" name="last_holidays" value="W tym roku" checked> W tym roku</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="last_holidays" value="Rok temu"> Rok temu</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="last_holidays" value="2 lata temu"> 2 lata temu</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="last_holidays" value="Więcej niż 2 lata temu"> Więcej niż 2 lata
+                    temu</label>
+            </div>
+        </div>
+
+        <div class="answer">
+            <label>11) Gdzie spędziłeś ostanie wakacje?</label>
+            <div class="radio">
+                <label><input type="radio" name="abroad" value="W Polsce" checked> W Polsce</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="abroad" value="W Europie"> W Europie</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="abroad" value="Poza Europą"> Poza Europą</label>
+            </div>
+        </div>
+
+        <div class="answer">
+            <label>12) Jak przygotowujesz się do podróży?</label>
+            <div class="radio">
+                <label><input type="radio" name="arrangements" value="Spontanicznie" checked> Spontanicznie</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="arrangements" value="Kilka dni wcześniej"> Kilka dni wcześniej -
+                    poznaję tradycje i
+                    zwyczaje miejsca, do którego się udaję</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="arrangements" value="Kilka miesięcy wcześniej"> Kilka miesięcy
+                    wcześniej planuję każde
+                    wakacje – poznaję tradycje, kuchnię, odnajduję ludzi na facebooku i pytam o opinie</label>
+            </div>
+        </div>
+
+        <div class="answer">
+            <label>13) Ile jesteś w stanie wydać na urlop/wakacje(na jedną osobę)?</label>
+            <div class="radio">
+                <label><input type="radio" name="expenses" value="Do 500zł" checked> Do 500zł</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="expenses" value="Od 500-1000zł"> Od 500-1000zł</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="expenses" value="Od 1000-3000zł"> Od 1000-3000zł</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="expenses" value="Od 3000-5000zł"> Od 3000-5000zł</label>
+            </div>
+            <div class="radio">
+                <label><input type="radio" name="expenses" value="Pieniądze nie grają roli"> Każde wakacje to podróż
+                    życia i nie ważne są pieniądze</label>
+            </div>
+        </div>
+
         <button type="submit" class="btn btn-primary">Gotowe</button>
     </form>
 </div>
