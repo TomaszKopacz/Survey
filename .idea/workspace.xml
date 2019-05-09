@@ -2,7 +2,18 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="40175800-3289-43b0-8ed2-2792d8371e7b" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/static/css/image.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/info.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/results.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/survey.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/static/images/welcome.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/static/css/web_app.css" beforeDir="false" afterPath="$PROJECT_DIR$/static/css/web_app.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/info_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/info_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/results_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/results_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/survey_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/survey_template.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/welcome_template.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/welcome_template.html" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -12,41 +23,20 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/hello.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="277">
-              <caret line="138" column="23" lean-forward="true" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
-              <folding>
-                <element signature="e#0#59#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/base.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="272">
-              <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/templates/info_template.html">
+        <entry file="file://$PROJECT_DIR$/static/css/web_app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+            <state relative-caret-position="334">
+              <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/templates/welcome_template.html">
+        <entry file="file://$PROJECT_DIR$/templates/survey_template.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state>
-              <caret selection-end-line="14" selection-end-column="14" />
+            <state relative-caret-position="255">
+              <caret line="54" column="64" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
             </state>
           </provider>
         </entry>
@@ -72,20 +62,21 @@
         <option value="$PROJECT_DIR$/templates/test.html" />
         <option value="$PROJECT_DIR$/static/css/dupa.css" />
         <option value="$PROJECT_DIR$/static/css/custom.css" />
-        <option value="$PROJECT_DIR$/static/css/web_app.css" />
         <option value="$PROJECT_DIR$/Procfile" />
         <option value="$PROJECT_DIR$/requirements.txt" />
-        <option value="$PROJECT_DIR$/templates/welcome_template.html" />
-        <option value="$PROJECT_DIR$/templates/survey_template.html" />
-        <option value="$PROJECT_DIR$/templates/results_template.html" />
         <option value="$PROJECT_DIR$/hello.py" />
-        <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/templates/info_template.html" />
+        <option value="$PROJECT_DIR$/templates/results_template.html" />
+        <option value="$PROJECT_DIR$/templates/welcome_template.html" />
+        <option value="$PROJECT_DIR$/templates/base.html" />
+        <option value="$PROJECT_DIR$/templates/survey_template.html" />
+        <option value="$PROJECT_DIR$/static/css/web_app.css" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-7" />
+    <option name="x" value="550" />
+    <option name="y" value="38" />
     <option name="width" value="811" />
     <option name="height" value="735" />
   </component>
@@ -130,15 +121,17 @@
     </option>
   </component>
   <component name="RecentsManager">
-    <key name="MoveFile.RECENT_KEYS">
-      <recent name="T:\studia_mgr\agh\1_semestr\aplikacje_webowe\WebApp\templates" />
-    </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="T:\studia_mgr\agh\1_semestr\aplikacje_webowe\WebApp\static" />
       <recent name="T:\studia_mgr\agh\1_semestr\aplikacje_webowe\WebApp" />
       <recent name="T:\studia_mgr\agh\1_semestr\aplikacje_webowe\WebApp\static\fonts" />
       <recent name="T:\studia_mgr\agh\1_semestr\aplikacje_webowe\WebApp\static\js" />
       <recent name="T:\studia_mgr\agh\1_semestr\aplikacje_webowe\WebApp\static\css" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="T:\studia_mgr\agh\1_semestr\aplikacje_webowe\WebApp\static\images" />
+      <recent name="T:\studia_mgr\agh\1_semestr\aplikacje_webowe\WebApp\static\css" />
+      <recent name="T:\studia_mgr\agh\1_semestr\aplikacje_webowe\WebApp\templates" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -225,13 +218,13 @@
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" weight="0.3289689" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.3289689" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3289689" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.39934534" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" />
       <window_info anchor="bottom" id="Version Control" order="7" weight="0.3289689" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.3289689" />
+      <window_info anchor="bottom" id="Terminal" order="8" weight="0.3289689" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" weight="0.3289689" />
       <window_info anchor="bottom" id="Heroku" order="11" weight="0.3289689" />
@@ -260,13 +253,6 @@
     <entry file="file://$PROJECT_DIR$/static/css/bootstrap.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/static/css/web_app.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="5" column="21" lean-forward="true" selection-start-line="5" selection-start-column="21" selection-end-line="5" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Procfile">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -284,51 +270,58 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/survey_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="529">
-          <caret line="115" column="29" selection-start-line="115" selection-start-column="29" selection-end-line="115" selection-end-column="29" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/templates/welcome_template.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret selection-end-line="14" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/templates/results_template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="19" selection-start-line="3" selection-start-column="19" selection-end-line="3" selection-end-column="19" />
+        <state relative-caret-position="85">
+          <caret line="5" column="18" selection-start-line="5" selection-start-column="18" selection-end-line="5" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/images/welcome.jpg">
+      <provider selected="true" editor-type-id="images" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/info_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="102">
+          <caret line="6" column="14" selection-start-line="6" selection-start-column="14" selection-end-line="6" selection-end-column="14" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/hello.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="277">
-          <caret line="138" column="23" lean-forward="true" selection-start-line="138" selection-start-column="23" selection-end-line="138" selection-end-column="23" />
+        <state relative-caret-position="989">
+          <caret line="67" column="22" selection-start-line="67" selection-start-column="22" selection-end-line="67" selection-end-column="22" />
           <folding>
             <element signature="e#0#59#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/base.html">
+    <entry file="file://$PROJECT_DIR$/templates/welcome_template.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="272">
-          <caret line="25" column="43" selection-start-line="25" selection-start-column="43" selection-end-line="25" selection-end-column="43" />
+        <state relative-caret-position="187">
+          <caret line="11" column="56" selection-start-line="11" selection-start-column="56" selection-end-line="11" selection-end-column="56" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/info_template.html">
+    <entry file="file://$PROJECT_DIR$/templates/base.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="8" selection-start-line="3" selection-start-column="8" selection-end-line="3" selection-end-column="8" />
+        <state relative-caret-position="209">
+          <caret line="35" column="37" selection-start-line="35" selection-start-column="37" selection-end-line="35" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/survey_template.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="54" column="64" selection-start-line="54" selection-start-column="64" selection-end-line="54" selection-end-column="64" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/static/css/web_app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="334">
+          <caret line="51" column="18" selection-start-line="51" selection-start-column="18" selection-end-line="51" selection-end-column="18" />
         </state>
       </provider>
     </entry>

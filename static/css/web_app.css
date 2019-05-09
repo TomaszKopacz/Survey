@@ -1,12 +1,70 @@
-h3 {
-    color: green;
+.bg-welcome {
+    background-image: url('../images/welcome.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bg-survey {
+    background-image: url('../images/survey.jpg');
+    height: 100%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+
+    color: white;
+}
+
+.bg-results {
+    background-image: url('../images/results.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.bg-info {
+    background-image: url('../images/info.jpg');
+    height: 100vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+}
+
+.welcome-box {
+    background-color: black;
+    color: white;
+    padding: 30px;
+    opacity: 0.8;
 }
 
 .answer {
     margin-top: 20px;
 }
 
+.input-box {
+    background-color: white;
+    opacity: 0.4;
+}
+
 .btn-primary {
     margin-top: 40px;
     margin-bottom: 40px;
+    background: black;
+    border-color: white;
+}
+
+.btn-primary:hover {
+    background-color: grey;
+    border-color: grey;
+}
+
+.page-footer {
+    background-color: black;
+    opacity: 0.8;
 }

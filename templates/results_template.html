@@ -1,46 +1,48 @@
 {% extends "base.html" %}
 
 {% block content %}
-<table class="table table-hover">
-    <thead class="table-dark">
-    <tr>
-        <th scope="col">#</th>
-        <th scope="col">Data</th>
-        <th scope="col">Pora roku</th>
-        <th scope="col">Miejsce</th>
-        <th scope="col">Ulubione</th>
-        <th scope="col">Hotel</th>
-        <th scope="col">Transport</th>
-        <th scope="col">Planowanie</th>
-        <th scope="col">Z kim</th>
-        <th scope="col">Aktywność</th>
-        <th scope="col">Rodzaj</th>
-        <th scope="col">Ostatnie wakacje</th>
-        <th scope="col">Jak daleko</th>
-        <th scope="col">Organizacja</th>
-        <th scope="col">Koszty</th>
-    </tr>
-    </thead>
-    <tbody>
-    {% for item in data %}
-    <tr>
-        <td>{{item.id}}</td>
-        <td>{{item.created_at}}</td>
-        <td>{{item.season}}</td>
-        <td>{{item.place}}</td>
-        <td>{{item.favourite}}</td>
-        <td>{{item.accommodation}}</td>
-        <td>{{item.mean}}</td>
-        <td>{{item.planning}}</td>
-        <td>{{item.partners}}</td>
-        <td>{{item.is_active}}</td>
-        <td>{{item.activity}}</td>
-        <td>{{item.last_holidays}}</td>
-        <td>{{item.abroad}}</td>
-        <td>{{item.arrangements}}</td>
-        <td>{{item.expenses}}</td>
-    </tr>
-    {% endfor %}
-    </tbody>
-</table>
+<div class="bg-results">
+    <table class="table table-hover">
+        <thead class="table-dark">
+        <tr>
+            <th scope="col">#</th>
+            <th scope="col">Data</th>
+            <th scope="col">Pora roku</th>
+            <th scope="col">Miejsce</th>
+            <th scope="col">Ulubione</th>
+            <th scope="col">Hotel</th>
+            <th scope="col">Transport</th>
+            <th scope="col">Planowanie</th>
+            <th scope="col">Z kim</th>
+            <th scope="col">Aktywność</th>
+            <th scope="col">Rodzaj</th>
+            <th scope="col">Ostatnie wakacje</th>
+            <th scope="col">Jak daleko</th>
+            <th scope="col">Organizacja</th>
+            <th scope="col">Koszty</th>
+        </tr>
+        </thead>
+        <tbody>
+        {% for item in data %}
+        <tr>
+            <td>{{item.id}}</td>
+            <td>{{item.created_at}}</td>
+            <td>{{item.season}}</td>
+            <td>{{item.place}}</td>
+            <td>{{item.favourite}}</td>
+            <td>{{item.accommodation}}</td>
+            <td>{{item.mean}}</td>
+            <td>{{item.planning}}</td>
+            <td>{{item.partners}}</td>
+            <td>{{item.is_active}}</td>
+            <td>{{item.activity}}</td>
+            <td>{{item.last_holidays}}</td>
+            <td>{{item.abroad}}</td>
+            <td>{{item.arrangements}}</td>
+            <td>{{item.expenses}}</td>
+        </tr>
+        {% endfor %}
+        </tbody>
+    </table>
+</div>
 {% endblock %}
