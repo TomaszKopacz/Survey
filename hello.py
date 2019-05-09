@@ -130,6 +130,11 @@ def show_results():
     return render_template("results_template.html", data=answers)
 
 
+@app.route("/info/")
+def info():
+    return render_template('info_template.html')
+
+
 if __name__ == "__main__":
     app.run(debug=True)
 
