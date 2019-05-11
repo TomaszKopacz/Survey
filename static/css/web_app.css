@@ -1,6 +1,7 @@
 .bg-welcome {
     background-image: url('../images/welcome.jpg');
     height: 100%;
+    min-height: 100vh;
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center center;
