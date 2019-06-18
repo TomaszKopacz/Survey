@@ -17,6 +17,12 @@ class Answer(db.Model):
 
     id = db.Column(db.Integer, primary_key=True)
     created_at = db.Column(db.DateTime, default=datetime.now)
+
+    age = db.Column(db.String(50))
+    sex = db.Column(db.String(10))
+    living = db.Column(db.String(10))
+    earnings = db.Column(db.String(50))
+
     season = db.Column(db.String(10))
     place = db.Column(db.String(10))
     favourite = db.Column(db.String(50))
@@ -32,6 +38,10 @@ class Answer(db.Model):
     expenses = db.Column(db.String(30))
 
     def __init__(self,
+                 age,
+                 sex,
+                 living,
+                 earnings,
                  season,
                  place,
                  favourite,
@@ -45,6 +55,10 @@ class Answer(db.Model):
                  abroad,
                  arrangements,
                  expenses):
+        self.age = age
+        self.sex = sex
+        self.living = living
+        self.earnings = earnings
         self.season = season
         self.place = place
         self.favourite = favourite
@@ -72,6 +86,11 @@ def show_form():
 
 @app.route("/save", methods=['POST'])
 def save():
+    _age = request.form["age"]
+    _sex = request.form["sex"]
+    _living = request.form["living"]
+    _earnings = request.form["earnings"]
+
     _season = request.form["season"]
     _place = request.form["place"]
     _favourite = request.form["favourite"]
@@ -88,7 +107,11 @@ def save():
     _arrangements = request.form["arrangements"]
     _expenses = request.form["expenses"]
 
-    answer = Answer(_season,
+    answer = Answer(_age,
+                    _sex,
+                    _living,
+                    _earnings,
+                    _season,
                     _place,
                     get_favourite(_favourite, _favourite_text),
                     _accommodation,
