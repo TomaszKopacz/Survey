@@ -2,55 +2,25 @@
 
 {% block content %}
 <div class="bg-results">
-    <table class="table table-hover">
-        <thead class="table-dark">
-        <tr>
-            <th scope="col">#</th>
-            <th scope="col">Data</th>
-            <th scope="col">Wiek</th>
-            <th scope="col">Plec</th>
-            <th scope="col">Zamieszkanie</th>
-            <th scope="col">Zarobki</th>
-            <th scope="col">Pora roku</th>
-            <th scope="col">Miejsce</th>
-            <th scope="col">Ulubione</th>
-            <th scope="col">Hotel</th>
-            <th scope="col">Transport</th>
-            <th scope="col">Planowanie</th>
-            <th scope="col">Z kim</th>
-            <th scope="col">Aktywność</th>
-            <th scope="col">Rodzaj</th>
-            <th scope="col">Ostatnie wakacje</th>
-            <th scope="col">Jak daleko</th>
-            <th scope="col">Organizacja</th>
-            <th scope="col">Koszty</th>
-        </tr>
-        </thead>
-        <tbody>
-        {% for item in data %}
-        <tr>
-            <td>{{item.id}}</td>
-            <td>{{item.created_at}}</td>
-            <td>{{item.age}}</td>
-            <td>{{item.sex}}</td>
-            <td>{{item.living}}</td>
-            <td>{{item.earnings}}</td>
-            <td>{{item.season}}</td>
-            <td>{{item.place}}</td>
-            <td>{{item.favourite}}</td>
-            <td>{{item.accommodation}}</td>
-            <td>{{item.mean}}</td>
-            <td>{{item.planning}}</td>
-            <td>{{item.partners}}</td>
-            <td>{{item.is_active}}</td>
-            <td>{{item.activity}}</td>
-            <td>{{item.last_holidays}}</td>
-            <td>{{item.abroad}}</td>
-            <td>{{item.arrangements}}</td>
-            <td>{{item.expenses}}</td>
-        </tr>
-        {% endfor %}
-        </tbody>
-    </table>
+    <br>
+    <br>
+    <div class="d-flex justify-content-center">
+        <form action="/charts/" method="POST">
+            <div class="form-group">
+                <label for="type">Wybierz parametr:</label>
+                <select class="form-control" name="type" id="type" style="width:200px">
+                    <option value="season">Pora roku</option>
+                    <option value="place">Miejsce</option>
+                    <option value="hotel">Hotel</option>
+                    <option value="transport">Transport</option>
+                    <option value="partner">Osoby towrzyszace</option>
+                    <option value="activity">Aktywnosci</option>
+                    <option value="abroad">Jak daleko</option>
+                    <option value="expenses">Wydatki</option>
+                </select><br>
+                <input type="submit" class="btn btn-primary" value="ZOBACZ WYNIKI">
+            </div>
+        </form>
+    </div>
 </div>
 {% endblock %}
